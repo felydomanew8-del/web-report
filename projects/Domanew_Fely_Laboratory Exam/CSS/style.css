@@ -1,0 +1,94 @@
+header {
+    background-color: #f430c9;
+    color:white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: wavy;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    
+}
+
+.profile {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    object-fit: fill;
+    border-radius: 50%;
+    border-color: aqua;
+}
+
+.profile h1 {
+    font-family: cursive;
+    margin: 0;
+}
+
+.profile p {
+    margin: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+main {
+    width: 50%;
+    margin: 20px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #150512;
+}
+
+li {
+    margin: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin: 5px 0 15px;
+}
+
+button {
+    padding: 10px;
+    background-color: #7b1465;
+    color: white;
+    border: none;
+}
+
+footer {
+    background-color: #7b1465;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+}

@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f1e8;
+    color: #3b2925;
+}
+
+
+
+header {
+    height: 80px;
+    background-color: #873b36;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 11%;
+
+    color: white;
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+
+.logo h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: white;
+}
+
+
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 0;
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+
+.hero {
+    height: 650px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("../IMAGES/hero.jpg");
+
+    background-size:100% 100%;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.hero-text {
+    color: white;
+}
+
+.hero-text h2 {
+    font-family: Georgia, serif;
+
+    font-size: 60px;
+
+    font-style: italic;
+
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+
+
+.shop-button {
+    display: inline-block;
+
+    background-color: #9b403b;
+
+    color: white;
+
+    padding: 14px 35px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-size: 18px;
+}
+
+.shop-button:hover {
+    background-color: #71302d;
+}
+
+
+.products-section {
+    padding: 35px 10% 60px;
+
+    background-color: #f7f1e8;
+
+    text-align: center;
+}
+
+.products-section > h2 {
+    font-family: Georgia, serif;
+
+    font-size: 36px;
+
+    margin-bottom: 30px;
+
+    color: #57302a;
+}
+
+
+
+.products {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+
+.product {
+    background-color: #fffdf9;
+
+    border: 1px solid #e4dcd1;
+
+    border-radius: 8px;
+
+    padding: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    text-align: left;
+
+    min-height: 135px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+
+.product img {
+    width: 155px;
+    height: 110px;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+
+    margin-right: 20px;
+}
+
+
+.product-info {
+    flex: 1;
+}
+
+.product h3 {
+    font-size: 17px;
+
+    margin-bottom: 10px;
+
+    font-weight: normal;
+}
+
+.product p {
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+
+.product button {
+    background-color: #963e39;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #71302d;
+}
+
+
+
+.team-section {
+    background-color: #eee2d5;
+
+    padding: 60px 10%;
+
+    text-align: center;
+}
+
+.team-section h2 {
+    font-family: Georgia, serif;
+
+    font-size: 35px;
+
+    color: #57302a;
+
+    margin-bottom: 30px;
+}
+
+.team {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.member {
+    background-color: white;
+
+    width: 230px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member img {
+    width: 120px;
+    height: 120px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin-bottom: 15px;
+}
+
+.member h3 {
+    margin-bottom: 5px;
+}
+
+.member p {
+    color: #777;
+}
+
+.about {
+    padding: 60px 10%;
+    background-color: #f5f0eb;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.about-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+
+.contact {
+    padding: 60px 15%;
+
+    text-align: center;
+
+    background-color: #f7f1e8;
+}
+
+.contact h2 {
+    font-family: Georgia, serif;
+
+    font-size: 35px;
+
+    margin-bottom: 25px;
+
+    color: #57302a;
+}
+
+form {
+    max-width: 500px;
+
+    margin: auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-family: Arial;
+}
+
+form textarea {
+    height: 120px;
+
+    resize: none;
+}
+
+form button {
+    background-color: #963e39;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #873b36;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text h2 {
+        font-size: 45px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    .hero {
+        height: 350px;
+    }
+
+    .hero-text h2 {
+        font-size: 38px;
+    }
+
+    .hero-text p {
+        font-size: 17px;
+    }
+
+    .product {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .product img {
+        width: 100%;
+        height: 180px;
+
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .team {
+        flex-direction: column;
+
+        align-items: center;
+    }
+}
